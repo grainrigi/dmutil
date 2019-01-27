@@ -5,6 +5,8 @@ AssetBundle download tool for CGSS (THE IDOLM@STER CINDERELLA GIRLS STARLIGHT ST
 ## Prerequisits
 
 - ruby
+- ruby-dev (or ruby-devel)
+- libsqlite3
 - bundler (you can install it by `gem install bundler`)
 
 ## Usage
