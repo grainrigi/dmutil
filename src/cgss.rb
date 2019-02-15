@@ -6,7 +6,7 @@ require_relative 'util/lz4.rb'
 class CGSSManifest
     private
     DB_NAME = 'db/cgss.mdb'
-    BASE_URL = 'http://storage.game.starlight-stage.jp/dl/'
+    BASE_URL = 'http://asset-starlight-stage.akamaized.net/dl/'
 
     public
     def self.update(version)
@@ -51,8 +51,9 @@ class CGSSManifest
         when ".bdb", ".mdb"
             dir = genericDirName "Generic"
         end
+        hash = manifest[:hash]
 
-        return dir + manifest[:hash]
+        return dir + hash[0,2] + "/" + hash
     end
 
     public
@@ -75,7 +76,7 @@ class CGSSManifest
 
     private
     def self.resDirName(type)
-        return "#{BASE_URL}resources/High/#{type}/Android/"
+        return "#{BASE_URL}resources/#{type}/"
     end
 
     private
