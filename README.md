@@ -11,10 +11,10 @@ AssetBundle download tool for CGSS (THE IDOLM@STER CINDERELLA GIRLS STARLIGHT ST
 
 ## Usage
 
-At first, clonse the repository and initialize.
+At first, clone the repository and initialize.
 
 ```
-$ git clone https://github.com/grainrigi/dmutil/
+$ git clone git@git.devdp.info:grainrigi/dmutil.git
 $ cd dmutil
 $ bundler install
 ```
