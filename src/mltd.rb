@@ -5,8 +5,8 @@ require_relative 'util/io.rb'
 class MLTDManifest
     private
     DB_NAME = 'db/mltd.mdb'
-    BASE_URL = 'http://td-assets.bn765.com/'
-    UNITY_VERSION = '2017.3'
+    BASE_URL = 'https://d2sf4w9bkv485c.cloudfront.net/'
+    UNITY_VERSION = '2018'
 
     public
     def self.update(version, hash)
